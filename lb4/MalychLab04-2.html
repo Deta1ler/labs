@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Вертикальні рядки</title>
+    <meta name="description" content="Приклад п’яти вертикальних рядків, що біжать">
+    <meta name="keywords" content="marquee, html, рядки, вертикальні, текст, картинки">
+</head>
+<body bgcolor="#FFF8DC" text="#000000">
+
+<!-- 1. Коливання вертикальне -->
+<marquee width="200" height="150" bgcolor="#FFCCCC" behavior="alternate" direction="up">
+    <font color="#800000" face="Verdana" size="3">Вертикальний рядок 1: текст коливається</font>
+</marquee>
+<br>
+
+<!-- 2. Рисунки знизу до гори -->
+<marquee width="200" height="150" bgcolor="#CCFFCC" behavior="scroll" direction="up">
+    <img src="image/pic1.jpg" width="50" height="50" alt="Картинка 1">
+    <img src="image/pic1.jpg" width="50" height="50" alt="Картинка 2">
+    <img src="image/pic1.jpg" width="50" height="50" alt="Картинка 3">
+</marquee>
+<br>
+
+<!-- 3. Рисунки згори до низу із зупинкою -->
+<marquee width="200" height="150" bgcolor="#CCCCFF" behavior="slide" direction="down">
+    <img src="image/pic1.jpg" width="50" height="50" alt="Картинка 4">
+    <img src="image/pic1.jpg" width="50" height="50" alt="Картинка 5">
+</marquee>
+<br>
+
+<!-- 4. Текст із різним режимом затримки 1 -->
+<marquee width="200" height="150" bgcolor="#FFFF99" behavior="scroll" direction="up" scrollamount="2" scrolldelay="50">
+    <font color="#FF4500" face="Verdana" size="3">Вертикальний рядок 4: повільний рух</font>
+</marquee>
+<br>
+
+<!-- 5. Текст із різним режимом затримки 2 -->
+<marquee width="200" height="150" bgcolor="#99FFFF" behavior="scroll" direction="down" scrollamount="5" scrolldelay="100">
+    <font color="#2E8B57" face="Verdana" size="3">Вертикальний рядок 5: швидший рух</font>
+</marquee>
+
+</body>
+</html>

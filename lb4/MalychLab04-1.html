@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Горизонтальні рядки</title>
+    <meta name="description" content="Приклад п’яти горизонтальних рядків, що біжать">
+    <meta name="keywords" content="marquee, html, рядки, горизонтальні, текст">
+</head>
+<body bgcolor="#F0F8FF" text="#000000">
+
+<!-- 1. Коливання -->
+<marquee width="800" height="50" bgcolor="#FFCCCC" behavior="alternate">
+    <font color="#800000" face="Verdana" size="4"><b>Рядок 1: текст коливається з боку в бік</b></font>
+</marquee>
+<br>
+
+<!-- 2. Пробігає справа наліво і з'являється знову -->
+<marquee width="800" height="50" bgcolor="#CCFFCC" behavior="scroll" direction="left">
+    <font color="#006400" face="Tahoma" size="4"><i>Рядок 2: текст біжить справа наліво</i></font>
+</marquee>
+<br>
+
+<!-- 3. Пробігає зліва направо і зупиняється -->
+<marquee width="800" height="50" bgcolor="#CCCCFF" behavior="slide" direction="right">
+    <font color="#000080" face="Arial" size="4"><b><i>Рядок 3: текст зупиняється справа</i></b></font>
+</marquee>
+<br>
+
+<!-- 4. З різними режимами запізнення -->
+<marquee width="800" height="50" bgcolor="#FFFF99" behavior="scroll" scrollamount="2" scrolldelay="50">
+    <font color="#FF4500" face="Verdana" size="4">Рядок 4: повільний рух</font>
+</marquee>
+<br>
+
+<marquee width="800" height="50" bgcolor="#99FFFF" behavior="scroll" scrollamount="6" scrolldelay="100">
+    <font color="#2E8B57" face="Verdana" size="4">Рядок 5: швидший рух із більшим запізненням</font>
+</marquee>
+
+</body>
+</html>
