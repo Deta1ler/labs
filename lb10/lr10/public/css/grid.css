@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* left nav - main - aside */
+  grid-template-rows: auto 1fr auto;   /* header - content - footer */
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  gap: 3px;
+  min-height: 100vh;
+}
+
+/* призначення областей */
+.grid-header { grid-area: header; }
+.grid-nav    { grid-area: nav; }
+.grid-main   { grid-area: main; }
+.grid-aside  { grid-area: aside; }
+.grid-footer { grid-area: footer; }
+
+/* кольори специфічно */
+.grid-nav { background: #7bd389; } 
+.grid-main { background: #f6c85f; }
+.grid-aside { background: #ff8a65; }
+
+/* адаптивність */
+@media (max-width: 1199px) {
+  .grid-container { grid-template-columns: 1fr 2fr; grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer"; }
+  .grid-aside { display: none; } /* сховаємо aside на середніх екранах */
+}
+@media (max-width: 749px) {
+  .grid-container { grid-template-columns: 1fr; grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"; }
+}

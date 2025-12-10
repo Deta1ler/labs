@@ -1,0 +1,19 @@
+/* Float layout specific */
+.content-area { min-height: calc(100vh - 160px); /* header+footer ~ 160px */ }
+
+/* три колонки - плаваючі */
+.left { float: left; width: 20%; min-width: 140px; margin-right: 3px; }
+.right { float: right; width: 20%; min-width: 140px; margin-left: 3px; }
+.main { margin: 0 23%; /* залишок між aside */ }
+
+/* очищення плаваючих елементів (якщо потрібно) */
+.content-area::after { content: ""; display: table; clear: both; }
+
+/* адаптивність */
+@media (max-width: 749px) {
+  .left, .right { float: none; width: 100%; margin: 3px 0; }
+  .main { margin: 3px 0; }
+}
+@media (max-width: 499px) {
+  .left, .right, .main { width: 100%; }
+}

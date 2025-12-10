@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР7 - Анкета</title>
+</head>
+<body>
+<h2>Лабораторна робота №7: Анкета студента</h2>
+
+<form action="result.html" method="get" target="_blank">
+
+<pre>
+Ім'я та прізвище: <input type="text" name="fullname" maxlength="50" size="50">
+
+Дата народження: <input type="date" name="birthdate">
+
+Ваша стать:
+<input type="radio" name="gender" value="male"> Чоловіча
+<input type="radio" name="gender" value="female"> Жіноча
+
+Курс навчання:  
+<select name="course" size="1">
+    <option value="1">Перший</option>
+    <option value="2">Другий</option>
+    <option value="3">Третій</option>
+    <option value="4">Четвертий</option>
+    <option value="5">П'ятий</option>
+</select>
+
+Факультет / спеціальність:
+<input type="text" name="faculty" size="40">
+
+Які дисципліни вивчаєте? (галочки)
+<input type="checkbox" name="web" value="yes"> WEB-програмування
+<input type="checkbox" name="math" value="yes"> Математика
+<input type="checkbox" name="phys" value="yes"> Фізика
+
+Додаткові коментарі:
+</pre>
+
+<textarea name="comments" rows="6" cols="60" wrap="off"></textarea>
+
+<p>
+<input type="submit" value="Відіслати анкету">
+<input type="reset" value="Очистити форму">
+<input type="file" name="attachment" size="50" accept=".jpg,.png,.txt,.pdf">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  min-height: calc(100vh - 160px);
+  gap: 3px; /* зовнішній інтервал між блоками = 3px */
+}
+
+/* фіксовані бокові панелі + гнучкий центр */
+.left { flex: 0 0 18%; min-width: 120px; }
+.right { flex: 0 0 18%; min-width: 120px; }
+.main { flex: 1 1 auto; }
+
+/* адаптивність */
+@media (max-width: 949px) {
+  .flex-container { flex-direction: column; }
+  .left, .right, .main { min-width: auto; width: 100%; }
+}

@@ -1,0 +1,52 @@
+/* Фонове зображення сторінки */
+body {
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    font-style: italic;      /* курсив */
+    font-size: 16px;         /* довільний розмір тексту */
+    margin-left: 5%;         /* відстань ліворуч */
+    margin-right: 5%;        /* відстань праворуч */
+    text-align: justify;     /* вирівнювання тексту по ширині */
+}
+
+/* Червоний рядок на початку абзаців */
+p::first-line {
+    color: red;
+}
+
+/* Заголовок 1-го рівня */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: darkgreen;       /* можна обрати будь-який колір */
+    font-style: normal;
+}
+
+/* Стилі для зображень */
+img {
+    max-width: 100%;       /* адаптивні зображення */
+    height: auto;
+    display: block;
+    margin: 10px auto;     /* центрування зображень */
+}
+
+/* Стилі посилань */
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+    text-decoration: none;
+}
